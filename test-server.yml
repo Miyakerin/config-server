@@ -3,3 +3,6 @@ spring:
         name: test-server
 
 secret: mamu ebal
+
+server:
+    port: 8123
