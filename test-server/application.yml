@@ -2,5 +2,4 @@ spring:
     application:
         name: test-server
 
-server:
-    port: 8082
+secret: mamu ebal
