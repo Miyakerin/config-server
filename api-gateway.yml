@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: api-gateway
+  ## ROUTES  http/lb for uri
+  cloud:
+    gateway:
+      #Discover Server Route
+      routes[0].id: discovery-server
+      routes[0].uri: http://localhost:8761
+      routes[0].predicates[0]: Path=/eureka/web
+      routes[0].filters[0]: SetPath=/
+
+      #Discover Server Static Resources Route
+      routes[1].id: discovery-server-static
+      routes[1].uri: http://localhost:8761
+      routes[1].predicates[0]: Path=/eureka/**
+
+      #Test Server Route
+      routes[2].id: test-server
+      routes[2].uri: lb://test-server
+      routes[2].predicates[0]: Path=/api/test
+
+
+server:
+  port: 8081
+
+logging:
+  level:
+    root: info
+    org.springframework.cloud.gateway: trace
+    org.springframework.cloud.gateway.route.RouteDefinitionLocator: info
