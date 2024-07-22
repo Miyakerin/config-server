@@ -29,3 +29,6 @@ logging:
     root: info
     org.springframework.cloud.gateway: trace
     org.springframework.cloud.gateway.route.RouteDefinitionLocator: info
+    
+ jwt:
+  secret: my-32-character-ultra-secure-and-ultra-long-secret
