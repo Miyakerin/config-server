@@ -4,5 +4,7 @@ spring:
 
 secret: mamu ebal
 
+second: ${test.json.secret}
+
 server:
     port: 8123
