@@ -2,7 +2,7 @@ spring:
     application:
         name: test-server
     config:
-        import: test.yml
+        import: test_env.properties
 
 secret: mamu ebal
 
