@@ -1,10 +1,10 @@
 spring:
     application:
         name: test-server
+    config:
+        import: test.yml
 
 secret: mamu ebal
-
-second: ${test.json.secret}
 
 server:
     port: 8123
