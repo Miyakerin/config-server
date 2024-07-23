@@ -3,4 +3,4 @@ server:
 
 spring:
   config:
-    import: jwt_secrets-dev.properties
+    import: ../jwt_secrets-dev.properties
