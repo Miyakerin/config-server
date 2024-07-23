@@ -1,0 +1,11 @@
+server:
+  port: 9002
+
+spring:
+    jpa:
+        show-sql: false
+        hibernate:
+            ddl-auto: update
+    config:
+        import: secrets-dev.properties
+ 

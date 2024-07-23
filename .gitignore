@@ -1,2 +1,3 @@
-test_env.properties
-my_secrets.properties
+jwt_secrets.properties
+
+/user-service/secrets.properties
