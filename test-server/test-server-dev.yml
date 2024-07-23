@@ -3,4 +3,4 @@ server:
 
 spring:
   config:
-    import: configserver:https://github.com/Miyakerin/config-server.git/jwt_secrets-dev.properties
+    import: jwt_secrets-dev.properties
