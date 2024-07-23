@@ -1,6 +1,2 @@
 server:
     port: 8123
-
-spring:
-  config:
-    import: ../jwt_secrets-dev.properties

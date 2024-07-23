@@ -7,5 +7,5 @@ spring:
         hibernate:
             ddl-auto: update
     config:
-        import: secrets-dev.properties
+        import: secrets-prod.properties
  
