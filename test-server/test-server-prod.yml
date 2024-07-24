@@ -1,2 +1,6 @@
 server:
     port: 8123
+
+spring:
+    kafka:
+        bootstrap-servers: localgost:9092
