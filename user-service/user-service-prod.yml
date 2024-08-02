@@ -13,5 +13,5 @@ spring:
       url: jdbc:postgresql://localhost:5432/user_db
       password: root
       user: admin
-      schemas: migrations
+      schemas: public
       locations: classpath:db/migration/user_db
