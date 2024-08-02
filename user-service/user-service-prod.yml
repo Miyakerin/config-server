@@ -15,3 +15,5 @@ spring:
       user: admin
       schemas: public
       locations: classpath:db/migration/user_db
+      baseline-on-migrate: true
+      baseline-version: '0'
