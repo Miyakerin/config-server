@@ -4,5 +4,10 @@ server:
 spring:
     kafka:
         bootstrap: localhost:9092
-
-            
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+    config:
+        import: secrets-dev.properties
+          

@@ -1,2 +1,12 @@
 server:
     port: 8222
+
+spring:
+    kafka:
+        bootstrap: localhost:9092
+    jpa:
+        show-sql: false
+        hibernate:
+            ddl-auto: update
+    config:
+        import: secrets-prod.properties
