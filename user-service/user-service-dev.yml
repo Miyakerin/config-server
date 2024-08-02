@@ -8,3 +8,12 @@ spring:
             ddl-auto: update
     config:
         import: secrets-dev.properties
+    flyway:
+      enabled: true
+      url: jdbc:postgresql://localhost:5432/user_db
+      password: root
+      user: admin
+      schemas: public
+      locations: classpath:db/migration/user_db
+      baseline-on-migrate: true
+      baseline-version: '0'
