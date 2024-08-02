@@ -1,2 +1,9 @@
 server:
     port: 8222
+
+spring:
+    kafka:
+        bootstrap: localhost:9092
+        
+
+            

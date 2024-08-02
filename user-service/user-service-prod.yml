@@ -8,4 +8,10 @@ spring:
             ddl-auto: update
     config:
         import: secrets-prod.properties
- 
+    flyway:
+      enabled: true
+      url: jdbc:postgresql://localhost:5432/user_db
+      password: root
+      user: admin
+      schemas: migrations
+      locations: classpath:db/migration/user_db

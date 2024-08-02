@@ -8,4 +8,3 @@ spring:
             ddl-auto: update
     config:
         import: secrets-dev.properties
- 
