@@ -1,0 +1,8 @@
+server:
+  port: 9001
+
+spring:
+  config:
+    import: 
+      - jwt_secrets-dev.properties
+      - ../jwt_secrets-dev.properties
