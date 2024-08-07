@@ -6,7 +6,5 @@ spring:
         show-sql: true
         hibernate:
             ddl-auto: validate
-    config:
-        import: secrets-dev.properties
 
           
