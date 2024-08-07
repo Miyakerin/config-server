@@ -1,0 +1,19 @@
+server:
+  port: 9002
+
+spring:
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: validate
+    config:
+        import: secrets-docker.properties
+    flyway:
+      enabled: true
+      url: jdbc:postgresql://user_db:5432/user_db
+      password: root
+      user: admin
+      schemas: public
+      locations: classpath:db/migration/user_db
+      baseline-on-migrate: true
+      baseline-version: '0'
